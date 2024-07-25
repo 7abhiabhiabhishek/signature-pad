@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Pad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <input type="color" id="textColor" title="Text color picker">
+            <input type="color" id="bgColor" title="Background">
+            <select id="fontSize" title="Font size">
+                <option value="2">2px</option>
+                <option value="4">4px</option>
+                <option value="6">6px</option>
+                <option value="8">8px</option>
+                <option value="10">10px</option>
+                <option value="12">12px</option>
+            </select>
+            <button id="clear">Clear</button>
+            <button id="save">Save & Download</button>
+            <button id="retrieve">Retrieve saved signature</button>
+        </div>
+        <div class="canvas-container">
+            <canvas id="signaturePad"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
